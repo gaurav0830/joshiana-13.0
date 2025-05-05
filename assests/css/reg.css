@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@font-face{
+  font-family: space-font;
+  src:url(../../fonts/Alphacentauri-MVY4p.ttf);
+}
+@font-face{
+  font-family: new-font;
+  src:url(../../fonts/Azonix-1VB0.otf);
+}
+/* Google Fonts(Poppins) */
+
+
+* {
+  font-family:new-font;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: #525252;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3d72b4, #525252);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3d72b4, #525252); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     color: #fff;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:linear;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .container-nav{
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+  top:-40%;
+  left:-20%;
+  padding: 25px;
+  border-radius: 8px;
+} */
+.container-nav p{
+  font-size: 1rem;
+  text-align: left;
+  font-family: space-font;
+}
+.container-nav p a{
+  text-decoration: none;
+  color: #fff;
+}
+.container-nav {
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+  top: -40%;
+  padding: 25px;
+  border-radius: 8px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: -10px 10px 20px black;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 768px) {
+  .container-nav {
+    top: -20%; /* Adjust positioning */
+    left: 0%;  /* Center horizontally */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .container-nav p {
+    font-size: 0.875rem; /* Slightly smaller font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .container-nav {
+    top: 0%; /* Align to the top */
+    left: 0%;
+    padding: 10px; /* Further reduce padding */
+    border-radius: 4px; /* Smaller border-radius */
+  }
+
+  .container-nav p {
+    font-size: 0.75rem; /* Even smaller font size */
+  }
+}
+
+
+
+/* form1 */
+.container-reg {
+  max-width: 700px;
+  width: 100%;
+  position: absolute;
+  top:20%;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: -10px 10px 20px black;
+  padding: 25px;
+  border-radius: 8px;
+}
+.container-reg h4{
+  font-size: 1rem;
+  text-align: center;
+  font-family: space-font;
+}
+.container-reg p{
+  font-size: 0.75rem;
+  text-align: center;
+  color:red;
+  font-family: new-font;
+}
+.total-info p{
+  font-size: 1.5rem;
+  text-align: center;
+  color:red;
+  font-family: new-font;
+}
+.container-reg header {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: black;
+  font-family: space-font;
+  text-align: center;
+}
+
+.container-reg .form {
+  margin-top: 30px;
+}
+
+.container-reg .form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.container-reg .form .input-box input,
+.container-reg .form .select-box {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  margin-top: 8px;
+  border-radius: 6px;
+  padding: 0 15px;
+  border: 3px solid black;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.container-reg .form .input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container-reg .form .column {
+  display: flex;
+  gap: 15px;
+}
+
+.input-box .error{
+  color:red;
+  margin-top: 0.5rem;
+}
+
+.container-reg .form .address input,
+.container-reg .form .address .select-box {
+  margin-top: 15px;
+}
+
+.container-reg .form .address .select-box select {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #707070;
+  font-size: 1rem;
+}
+
+.container-reg .form .button {
+  height: 55px;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: 3px solid black;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: 0.3s ease;
+  font-family: space-font;
+}
+
+.container-reg .form .button:hover {
+  background: black;
+  border:3px solid white;
+}
+
+@media (max-width: 500px) {
+  body{
+    height:auto;
+  }
+
+  .container-reg .form .column {
+    flex-wrap: wrap;
+  }
+
+}
+@media(max-width:465px){
+  body{
+    height:auto;
+  }
+}
+
+/* form2 */
+/* .container-reg1 {
+  max-width: 700px;
+  width: 100%;
+  position: absolute;
+  top:75%;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: -10px 10px 20px black;
+  padding: 25px;
+  padding-top: 0;
+  border-radius: 8px;
+} 
+ .container-reg1 .form1 {
+  margin-top: 30px;
+} */
+
+/* .container-reg1 .form1 .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.container-reg1 .form1 .input-box input,
+.container-reg1 .form1 .select-box {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  margin-top: 8px;
+  border-radius: 6px;
+  padding: 0 15px;
+  border: 3px solid black;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.container-reg1 .form1 .input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container-reg1 .form1 .column {
+  display: flex;
+  gap: 15px;
+}
+
+
+.input-box .error{
+  color:red;
+  margin-top: 0.5rem;
+}
+
+
+
+.container-reg1 .form1 .address input,
+.container-reg1 .form1 .address .select-box {
+  margin-top: 15px;
+}
+
+.container-reg1 .form1 .address .select-box select {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #707070;
+  font-size: 1rem;
+}
+
+.container-reg1 .form1 .button {
+  height: 55px;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: 3px solid black;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: 0.3s ease;
+  font-family: space-font;
+}
+
+.container-reg1 .form1 .button:hover {
+  background: black;
+  border:3px solid white;
+}
+
+@media (max-width: 500px) {
+  body{
+    height:auto;
+  }
+  .container-reg1 .form1 .column {
+    flex-wrap: wrap;
+  }
+
+}
+@media(max-width:465px){
+  body{
+    height:auto;
+  }
+}  */
+/* Base styles for container and form */
+ /* .container-reg1 {
+  max-width: 700px;
+  width: 100%;
+  position: absolute;
+  top:95%;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: -10px 10px 20px black;
+  padding: 25px;
+  padding-top: 0;
+  border-radius: 8px;
+} */
+hr{
+  border: 3px solid black;
+  width:100%;
+  margin-top:30px;
+}
+ .form1 {
+  margin-top: 30px;
+}
+
+ .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+ .input-box input,
+.input-box select {
+  height: 50px; 
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  margin-top: 8px;
+  border-radius: 6px;
+  padding: 0 15px;
+  border: 3px solid black;
+  background-color: white;
+}
+
+/* .container-reg1 .input-box input:focus,
+.input-box select:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+} */
+
+/* .container-reg1 .column {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; 
+} */
+
+ .input-box .error {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+ .button {
+  height: 55px;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: 3px solid black;
+  background: transparent;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: space-font;
+}
+
+.button:hover {
+  background: black;
+  border: 3px solid white;
+}
+.delete-button{
+  width:100px;
+  height:30px;
+  font-weight: bold;
+  background-color: #E4003A;
+  border:0;
+  box-shadow: 5px 5px 10px black;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* @media (min-width: 768px) {
+  .container-reg1 {
+    max-width: 80%; 
+  }
+
+  .container-reg1 .input-box input,
+  .input-box select {
+    height: 55px;
+  }
+
+  .container-reg1 .button {
+    height: 60px; 
+  }
+} */
+@media only screen and (max-width: 1024px) {
+  .container-reg1{
+    margin-top: -100px;
+  }
+}
+@media (max-width: 767px) {
+  .container-reg1 {
+    padding: 15px;
+    margin-top: -100px; 
+  }
+
+  .container-reg1 .input-box input,
+  .input-box select {
+    height: 45px; 
+  }
+
+  .container-reg1 .button {
+    height: 50px; 
+  }
+}
+
+
+@media (max-width: 500px) {
+  body{
+    height:auto;
+
+  }
+ 
+  .container-reg1 {
+    padding: 10px; 
+    margin: auto;
+    margin-top: 100px; 
+  }
+
+  .container-reg1 .input-box input,
+  .input-box select {
+    height: 40px; 
+    font-size: 0.9rem; 
+  }
+
+  .container-reg1 .button {
+    height: 45px; 
+    font-size: 1.2rem; 
+  }
+} 

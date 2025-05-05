@@ -1,0 +1,223 @@
+/* Importing fonts from Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@font-face{
+    font-family: myFont;
+    src:url(../../fonts/Alphacentauri-MVY4p.ttf);
+  }
+@font-face{
+    font-family:new-font;
+    src:url(../../fonts/Azonix-1VB0.otf);
+  }
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting font family for the body */
+
+
+/* Container for the main content */
+.contact-main .container-contact {
+    width: 80%;
+    margin: 50px auto;
+}
+
+/* Styling for main heading */
+.contact-main .container-contact h2 {
+    padding-top:1rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.2rem;
+    font-family: new-font;
+}
+
+/* Styling for paragraph text */
+.contact-main .container-contact p {
+    color: #ffffff;
+    font-size: 25px;
+}
+.input-group p a{
+    text-decoration: none;
+  }
+/* Styling for contact box container */
+.contact-box {
+    background: #ffffff;
+    display: flex;
+    margin-top: 100px;
+}
+
+/* Styling for left container inside the contact box */
+.container-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+/* Styling for right container inside the contact box */
+.container-right {
+    flex-basis: 40%;
+    padding: 40px 60px;
+    background:black;
+    color: #ffffff;
+    border:2px solid white;
+}
+
+/* Styling for heading inside left container */
+.container-left h5 {
+    width:150px;
+    border:2px solid black;
+    padding:1rem;
+    font-size: 1rem;
+    font-family: myFont;
+}
+
+/* Styling for heading inside right container */
+.container-right h3 {
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Styling for input rows */
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Styling for input groups inside input rows */
+.input-row .input-group {
+    flex-basis: 45%;
+}
+.input-group h4{
+    margin-bottom: 5px;
+    font-family:new-font;
+    font-size: 1rem;
+}
+.container-left .input-group .subp{
+    line-height: 1.3rem;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: grey;
+}
+.input-group p a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+.input-group i{
+font-size: 1.5rem;
+padding: 0.2rem;
+}
+/* Styling for iframes */
+iframe {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 30px;
+}
+
+/* CSS for larger screens (laptop) */
+@media only screen and (min-width: 1367px) {
+    .container-contact {
+        width: 70%;
+    }
+
+
+    .container-contact p {
+        font-size: 25px;
+    }
+
+    .container-left,
+    .container-right {
+        padding: 40px;
+    }
+
+    .input-row .input-group {
+        flex-basis: 48%;
+    }
+
+}
+
+/* CSS for larger screens (laptop) */
+@media only screen and (max-width: 1366px) {
+    .container-contact {
+        width: 70%;
+    }
+
+
+    .container-contact p {
+        font-size: 22px;
+    }
+
+    .container-left,
+    .container-right {
+        padding: 40px;
+    }
+
+    .input-row .input-group {
+        flex-basis: 48%;
+    }
+
+}
+
+/* CSS for medium-sized screens (tablet) */
+@media only screen and (max-width: 1024px) {
+
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .container-contact {
+        width: 80%;
+    }
+
+    .container-contact p {
+        font-size: 22px;
+    }
+
+    .container-left,
+    .container-right {
+        padding: 30px;
+    }
+
+    .input-row {
+        flex-wrap: wrap;
+    }
+
+    .input-row .input-group {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+
+}
+
+/* CSS for smaller screens (mobile) */
+@media only screen and (max-width: 767px) {
+    .container-contact {
+        width: 90%;
+    }
+
+    .container-contact h2 {
+        font-size: 1.2rem;
+    }
+
+    .container-contact p {
+        font-size: 18px;
+    }
+
+    .container-left,
+    .container-right {
+        padding: 20px;
+    }
+
+    .input-row {
+        flex-direction: column; /* Stack input rows vertically */
+    }
+
+    .input-row .input-group {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+
+}

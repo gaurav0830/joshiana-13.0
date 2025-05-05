@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@font-face{
+  font-family: space-font;
+  src:url(../../fonts/Alphacentauri-MVY4p.ttf);
+}
+@font-face{
+  font-family: new-font;
+  src:url(../../fonts/Azonix-1VB0.otf);
+}
+/* Google Fonts(Poppins) */
+
+
+* {
+  font-family:new-font;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:url(../images/bg-2.jpg);
+}
+
+.container-reg {
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: -10px 10px 20px black;
+  padding: 25px;
+  border-radius: 8px;
+}
+.container-reg h4{
+  font-size: 1rem;
+  text-align: center;
+  font-family: space-font;
+}
+.container-reg header {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: black;
+  font-family: space-font;
+  text-align: center;
+}
+
+.container-reg .form {
+  margin-top: 30px;
+}
+
+.container-reg .form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.container-reg .form .input-box input,
+.container-reg .form .select-box {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  margin-top: 8px;
+  border-radius: 6px;
+  padding: 0 15px;
+  border: 3px solid black;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.container-reg .form .input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container-reg .form .column {
+  display: flex;
+  gap: 15px;
+}
+
+.container-reg .form .address input {
+  margin-top: 15px;
+}
+
+
+.container-reg .form button {
+  height: 55px;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: 3px solid black;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: 0.3s ease;
+  font-family: space-font;
+}
+
+.container-reg .form button:hover {
+  background: black;
+  border:3px solid white;
+}
+
+@media (max-width: 500px) {
+  .container-reg .form .column {
+    flex-wrap: wrap;
+  }
+
+  .container-reg .form .gender-box .gender-option,
+  .container-reg .form .gender-box .gender-option .gender {
+    gap: 15px;
+  }
+}

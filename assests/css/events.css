@@ -1,0 +1,218 @@
+/* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@font-face{
+    font-family: myFont;
+    src:url(../../fonts/Alphacentauri-MVY4p.ttf);
+  }
+  @font-face{
+    font-family:new-font;
+    src:url(../../fonts/Azonix-1VB0.otf);
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    overflow-x: hidden;
+}
+.page-main{
+    background: linear-gradient(
+        rgba(46, 45, 45, 0.45), 
+        rgba(34, 34, 34, 0.45)
+      ),url("../../images/bg-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
+    margin-top: -60px;
+    height:50vh;
+}
+.page-main h1{
+    padding-top: 200px;
+    text-align:center;
+    color:white;
+    font-family: myFont;
+    text-shadow: 5px 5px 10px black;
+}
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1250px;
+    margin: 150px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card-list .card-item {
+    background: #fff;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-list .card-item:hover {
+    border: 2px solid white;
+    transform: translateY(-0.5rem);
+}
+
+.card-list .card-item img {
+    width: 100%;
+    aspect-ratio: 12/9;
+    border-radius: 8px;
+    object-fit: fill;
+    transform: scale(1);
+   transition: .5s ease;
+}
+.card-list .card-item:hover img {
+  transform: scale(1.2);
+}
+
+.card-list span {
+    display: inline-block;
+    margin-top: 32px;
+    padding: 8px ;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-family: myFont;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.card-list .sub-head{
+    margin-left: 10px;
+    color:black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.card-item ul li{
+    color: #000;
+    font-size: 1rem;
+    margin-left: 20px;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: grey;
+}
+
+.card-item h3{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.card-item p{
+    line-height: 1.5rem;
+    color: grey;
+}
+.card-item p a{
+    text-decoration: none;
+}
+@media (max-width: 1200px) {
+    .card-list .card-item {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .card-list {
+        margin: 0 auto;
+    }
+    .card-item h3{
+        margin-left: 0px;
+    }
+}
+/*about*/
+.about{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+ }
+ .about-img img{
+    width: 25rem;
+    height:20rem;
+    -webkit-box-shadow: -16px 16px 14px -4px rgba(12,12,12,1);
+   -moz-box-shadow: -16px 16px 14px -4px rgba(12,12,12,1);
+   box-shadow: -16px 16px 14px -4px rgba(12,12,12,1);
+   margin-left: 6rem;
+   transform: scale(1);
+   transition: .5s ease;
+ }
+ .about-img img:hover{
+  transform: scale(1.2);
+  object-fit: cover;
+ }
+
+
+
+ .about-content h2{
+    text-align: left;
+    line-height: 1.2;
+    font-size: 1.2rem;
+    color:white;
+    font-family: myFont;
+    border: 2px solid white;
+    width:150px;
+    padding: 1rem;
+    margin-top: 60px;
+ }
+ .about-content h3{
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.2;
+    color:white;
+    font-size: 1.7rem;
+    font-family: myFont;
+    padding-top:1.4rem
+ }
+ .about-content p{
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: 0rem 0 3rem;
+    color:grey;
+    font-family: new-font;
+    padding: 1.5rem;
+    padding-left: 0;
+ }
+
+ @media(max-width:768px){
+   
+    .about{
+       flex-direction: column-reverse;
+       margin-top: -2rem;
+    }
+ 
+    .about img{
+       width: 70vw;
+    }
+    .about-content h2,h3{
+        margin-left: 2rem;
+    }
+    .about-content p{
+        margin-left: 2rem;
+    }
+    .about-img img{
+        width: 90vw;
+        margin-top: -8rem;
+        margin-right: 95px;
+     }
+ }
+
+ @media(max-width:365px){
+ 
+    .about-img img{
+       width: 90vw;
+       margin-top: -10rem;
+       margin-right: 95px;
+    }
+ 
+ }
+ 

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@font-face{
+    font-family: myFont;
+    src:url(../../fonts/Alphacentauri-MVY4p.ttf);
+  }
+  @font-face{
+    font-family:new-font;
+    src:url(../../fonts/Azonix-1VB0.otf);
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    overflow-x: hidden;
+}
+.team-head h1{
+    padding-top: 80px;
+    text-align:center;
+    color:white;
+    font-family: myFont;
+    text-shadow: 5px 5px 10px black;
+}
+.team-head h2{
+    padding: 20px;
+    text-align:center;
+    color:white;
+    font-family: myFont;
+    text-shadow: 5px 5px 10px black;
+}
+.team-card-list {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1250px;
+    margin: 50px auto;
+    padding: 20px ;
+    gap: 20px;
+}
+
+.team-card-list .team-card-item {
+    background: black;
+    padding: 30px;
+    max-width: 320px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid white;
+    transition: border 0.5s ease;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.team-card-list .team-card-item img {
+    width: 100%;
+    aspect-ratio: 9/9;
+    border-radius: 8px;
+    object-fit:fill;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+.team-card-list .team-card-item img:hover {
+    transform: translateY(-0.5rem);
+    transform: scale(1.1)
+}
+.team-card-list span {
+    display: inline-block;
+    margin-top: 32px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-family: myFont;
+    color: white;
+    text-transform: uppercase;
+}
+.team-card-list .sub-head{
+    color:grey;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: new-font;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+.team-card-list1 {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1250px;
+    margin: 50px auto;
+    padding: 20px 200px;
+    gap: 20px;
+}
+.team-card-list1 .team-card-item {
+    background: black;
+    padding: 30px;
+    max-width: 320px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid white;
+    transition: border 0.5s ease;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-card-list1 .team-card-item:hover {
+    border: 2px solid white;
+    transform: translateY(-0.5rem);
+    transform: scale(1.1)
+}
+
+.team-card-list1 .team-card-item img {
+    width: 100%;
+    aspect-ratio: 9/9;
+    border-radius: 8px;
+    object-fit:fill;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+.team-card-list1 .team-card-item img:hover {
+    transform: translateY(-0.5rem);
+    transform: scale(1.1)
+}
+
+
+.team-card-list1 span {
+    display: inline-block;
+    margin-top: 32px;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-family: myFont;
+    color: white;
+    text-transform: uppercase;
+}
+.team-card-list1 .sub-head{
+    color:grey;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    font-family: new-font;
+}
+
+@media (max-width: 1200px) {
+    .team-card-list .team-card-item {
+        padding: 15px;
+    }
+    .team-card-list1 .team-card-item {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .team-head{
+        padding-top: 4rem;
+    }
+    .team-card-list {
+        margin: 0 auto;
+    }
+    .team-card-list1{
+        padding: 0;
+        margin: 25px ;
+    }
+    .team-card-list .team-card-item{
+        height:auto;
+    }
+    .team-card-list1 .team-card-item{
+        height:auto;
+    }
+    .team-head h1{
+        font-size: 1.5rem;
+        padding: 1rem;
+        padding-top: 2.5rem;
+    }
+    .team-card-item h3{
+        margin-left: 0px;
+    }
+}
